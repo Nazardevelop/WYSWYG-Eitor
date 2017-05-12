@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/js.js"></script>
+    <title>WYSWYG-Editor</title>
+</head>
+<body onload="iframe()">
+<header>
+    <div class="container">
+
+            <div class="head">
+                <div class="header-icon">
+                    <IMG src="images/header-icon.png">
+                </div>
+                <div class="name">
+                    <h1 id="head">WYSIWYG Editor</h1>
+                </div>
+                <div class="head-buttons">
+                    <div class="about">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="try-css">
+                        <a href="#">Try Css</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</header>
+    <form method="post">
+        <div class="container">
+            <div class="col-md-12">
+                <div id="buttons">
+                    <div class="bold">
+                        <input type="button" value="B" onclick="bold()">
+                    </div>
+                    <div class="italic">
+                        <input type="button" value="I" onclick="italic()">
+                    </div>
+                    <div class="underline">
+                        <input type="button" value="U" onclick="underline()">
+                    </div>
+                    <div class="size">
+                        <input type="button" value="Size" onclick="fontsize()">
+                     </div>
+                    <div class="color">
+                        <input type="button" value="Color" onclick="fontcolor()">
+                    </div>
+                    <div class="highlight">
+                        <input type="button" value="Highlight" onclick="highlight()">
+                    </div>
+                    <div class="link">
+                        <input type="button" value="Link" onclick="link()">
+                    </div>
+                    <div class="unlink">
+                        <input type="button" value="Unlink" onclick="unlink()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="v-editor">
+                    <textarea name="text-area-editor" id="text-area-editor">
+                    </textarea>
+
+                    <iframe name="editor" id="editor"></iframe>
+                </div>
+                <div class="generate-buttons">
+                    <div class="g-to-html">
+                        <button>  >> </button>
+                    </div>
+                    <div class="g-to-text">
+                        <button> <<  </button>
+                    </div>
+                </div>
+                <div class="html-editor">
+                    <textarea name="html-area-editor" id="html-area-editor">
+                    </textarea>
+
+                    <iframe name="h_editor" id="h_editor"></iframe>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--<input type="button" onclick="formsubmit()" value="post">-->
+    </form>
+<footer>
+    <div class="container">
+        <div class="mail">
+            <div class="mail-img">
+                <img src="images/mail-img.png">
+            </div>
+            <p> tolmachovnazar@gmail.com</p>
+        </div>
+        <div class="tel-number">
+            <div class="phone-number">
+                <img src="images/phone_number.png">
+            </div>
+            <p>+380979770461</p>
+        </div>
+        <div class="footer-line">
+            <hr>
+        </div>
+        <div class="mail-to">
+            <a href="mailto:tolmachovnazar@gmail.com"><img src="images/mail-to.png"></a>
+        </div>
+        </div>
+        <div class="copyright-end">
+            <p><small>&copy; Tolmachov, 2017 </small></p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
